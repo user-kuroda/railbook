@@ -1,0 +1,21 @@
+<h1>View Helper Test</h1>
+
+<%= render 'form' %>
+
+<table>
+  <br><%= text_field :book, :isbn %></br>
+  <br><%= number_field :book, :isbn %></br>
+      <%= radio_button :user, :color, "red" %>ê‘
+      <%= radio_button :user, :color, "blue" %>ê¬
+      <%= radio_button :user, :color, "yellow" %>â©
+  <br><%= check_box :bookl, :cd, {}, 0, 1%></br>
+  <br><%= link_to 'Back', books_path %></br>
+  <br><%= text_area :book, :memo %></br>
+  <br><%= select :user, :address, ["èoâ_és","èºç]és"] %></br>
+  <br>
+  <select id="book_publish" name="book[publish]">
+    <option value="1">èWâpé–</option>
+    <option value="2">çuíké–</option>
+  </select>
+  </br>
+  <br><%= image_tag 'a.JPG' %></br>

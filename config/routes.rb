@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   resources :books do
     get 'search', on: :collection
-  #end
-  #resources :books do
     get 'view_helper_test', on: :collection
   end
   # The priority is based upon order of creation: first created -> highest priority.
