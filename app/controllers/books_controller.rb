@@ -1,4 +1,4 @@
-class BooksController < ApplicationController
+﻿class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
 
   # GET /books
@@ -67,8 +67,8 @@ class BooksController < ApplicationController
   end
 
   def view_helper_test
-   @books = Book.where(cd: false)
-   render :index
+   #@books = Book.where(cd: false)
+   #render :nothing => true   #まっしろ
   end
 
   private
