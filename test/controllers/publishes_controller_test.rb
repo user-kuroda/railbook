@@ -17,8 +17,8 @@ class PublishesControllerTest < ActionController::TestCase
   end
 
   test "should create publish" do
-    assert_difference('Publishe.count') do
-      post :create, publish: { address: @publish.address, publishename: @publish.publishename }
+    assert_difference('Publish.count') do
+      post :create, publish: { address: @publish.address, publishname: @publish.publishname }
     end
 
     assert_redirected_to publish_path(assigns(:publish))
@@ -35,12 +35,12 @@ class PublishesControllerTest < ActionController::TestCase
   end
 
   test "should update publish" do
-    patch :update, id: @publish, publish: { address: @publish.address, publishename: @publish.publishename }
+    patch :update, id: @publish, publish: { address: @publish.address, publishname: @publish.publishname }
     assert_redirected_to publish_path(assigns(:publish))
   end
 
   test "should destroy publish" do
-    assert_difference('Publishe.count', -1) do
+    assert_difference('Publish.count', -1) do
       delete :destroy, id: @publish
     end
 
