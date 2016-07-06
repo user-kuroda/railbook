@@ -1,21 +1,13 @@
-﻿<p id="notice"><%= notice %></p>
-
-<h1>View Helper Test</h1>
+﻿<h1>View Helper Test</h1>
 
   <br><%= text_field :book, :isbn %></br>
   <br><%= number_field :book, :isbn %></br>
-      <%= radio_button :user, :color, "red" %>赤
-      <%= radio_button :user, :color, "blue" %>青
-      <%= radio_button :user, :color, "yellow" %>黄
+  <%= radio_button :user, :color, "red" %>赤
+  <%= radio_button :user, :color, "blue" %>青
   <br><%= check_box :book, :cd, {}, 0, 1 %></br>
   <br><%= link_to 'Back', books_path %></br>
   <br><%= text_area :book, :memo %></br>
   <br><%= select :user, :address, ["大阪府","東京都"] %></br>
-  <br>
-  <select id = "book_publish" name = "book[publish]">
-    <option value = "1">集英社</option>
-    <option value = "2">講談社</option>
-  </select>
-  </br>
+  <br><%= collection_select :user, :like, Book.all, :id, :title %>
   <br><%= image_tag 'moyashi.jpg' %></br>
 
